@@ -21,7 +21,7 @@ The package provides two main functions:
 This is a basic usage example.
 
 ```python
-from elapse_secrets_filters import filter_elapse_secrets
+from elapse_secrets import filter_elapse_secrets
 
 text_with_secrets = "My AWS Access Key is AKIAYOURACCESSKEYHERE"
 filtered_text = filter_elapse_secrets(text_with_secrets)

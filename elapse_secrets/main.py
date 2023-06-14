@@ -1,6 +1,9 @@
 import yaml
 import re
 import logging
+import os
+
+current_dir = os.path.dirname(os.path.abspath(__file__))
 
 logging.basicConfig(level=logging.INFO)
 
@@ -11,7 +14,8 @@ def clean_regex(regex):
     cleaned = cleaned.replace("(?-i)", "")
     return cleaned
 
-def process_regex(yaml_file, text):
+def process_regex(folder,filename, text):
+    yaml_file = os.path.join(current_dir,folder,filename)
     with open(yaml_file, 'r') as stream:
         y = yaml.safe_load(stream)
 
@@ -44,4 +48,5 @@ def process_regex(yaml_file, text):
     return stripped_text
 
 def filter_elapse_secrets(text: str):
-    return process_regex('elapse_secrets/db/rules-elapse-stable.yml', text)
+    return process_regex('db','rules-elapse-stable.yml', text)
+
