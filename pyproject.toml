@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "elapse-secrets"
-version = "0.1.1"
+version = "0.1.2"
 description = "Detects and removes sensitive information from the client-side to secure a user's data."
 authors = ["kdcokenny <kenny@kdco.llc>"]
 readme = "README.md"
