@@ -10,22 +10,10 @@ The package provides two main functions:
 
 ## Getting Started
 
-1. Clone this repository
+1. Install elapse-secrets
 
    ```bash
-   git clone https://github.com/username/elapse_secrets_filters.git
-   ```
-
-2. Navigate to the cloned repository
-
-   ```bash
-   cd elapse_secrets_filters
-   ```
-
-3. Install the required packages
-
-   ```bash
-   poetry install
+   pip install elapse-secrets
    ```
 
 ## Usage
